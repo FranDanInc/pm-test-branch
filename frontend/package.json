@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranDanInc/pm-test-branch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FranDanInc/pm-test-branch/issues"
+  },
+  "homepage": "https://github.com/FranDanInc/pm-test-branch#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "googleapis": "^123.0.0"
+  }
+}

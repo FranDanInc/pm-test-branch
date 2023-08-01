@@ -1,3 +1,9 @@
+// backend/server.js
+require('dotenv').config();
+
+// Access the environment variables as process.env.VARIABLE_NAME
+// For example: process.env.GSHEETS_CLIENT_EMAIL
+
 // server.js
 const express = require('express');
 const { google } = require('googleapis');
