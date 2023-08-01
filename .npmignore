@@ -1,6 +1,14 @@
-src
-.github
-.yarn-error.log
+.nyc_output
+.DS_store
+.vscode
+.idea
+.travis.yml
 
-# Docker data
-data
+/coverage
+
+docker-compose.ovverride.yml
+
+node_modules
+
+docs
+/packages

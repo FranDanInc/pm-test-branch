@@ -1,154 +1,71 @@
-# Forest Admin in Nodejs (Express.js & Mongoose)
+# AdminJS
 
-[![npm package](https://badge.fury.io/js/forest-express-mongoose.svg)](https://badge.fury.io/js/forest-express-mongoose)
-[![CI status](https://github.com/ForestAdmin/forest-express-mongoose/workflows/Build,%20Test%20and%20Deploy/badge.svg?branch=main)](https://github.com/ForestAdmin/forest-express-mongoose/actions)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/4881f8b0b3cb806cd472/test_coverage)](https://codeclimate.com/github/ForestAdmin/forest-express-mongoose/test_coverage)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[AdminJS](https://adminjs.co/) is an automatic admin interface that can be plugged into your application. You, as a developer, provide database models (like posts, comments, stores, products or whatever else your application uses), and AdminJS generates UI which allows you (or other trusted users) to manage content.
 
-Forest Admin provides an off-the-shelf administration panel based on a highly-extensible API plugged into your application.
+Inspired by: [django admin](https://docs.djangoproject.com), [rails admin](https://github.com/sferik/rails_admin) and [active admin](https://activeadmin.info/).
 
-This project has been designed with scalability in mind to fit requirements from small projects to mature companies.
+## Example application
 
-## Who Uses Forest Admin
+Check out our demo application:
 
-- [Apartmentlist](https://www.apartmentlist.com)
-- [Carbon Health](https://carbonhealth.com)
-- [Ebanx](https://www.ebanx.com)
-- [First circle](https://www.firstcircle.ph)
-- [Forest Admin](https://www.forestadmin.com) of course :-)
-- [Heetch](https://www.heetch.com)
-- [Lunchr](https://www.lunchr.co)
-- [Pillow](https://www.pillow.com)
-- [Qonto](https://www.qonto.eu)
-- [Shadow](https://shadow.tech)
-- And hundreds more…
+- Login: `admin@example.com`
+- Password: `password`
+
+https://demo.adminjs.co
+
+You can also have a look at our customized AdminJS dashboard which shows various library statistics:
+
+https://stats.adminjs.co
 
 ## Getting started
 
-[https://docs.forestadmin.com/documentation/how-tos/setup/install](https://docs.forestadmin.com/documentation/how-tos/setup/install)
+- Check out the [documentation](https://docs.adminjs.co)
+- Try the [live demo](https://demo.adminjs.co) as mentioned above
 
-## Documentation
+## Our open source community on Slack
 
-[https://docs.forestadmin.com/documentation/](https://docs.forestadmin.com/documentation/)
+- [Join the community](https://adminjs.page.link/slack) to get help and be inspired.
 
-## How it works
+# What kind of problems it solves
 
-<p align="center" style="margin: 60px 0">
-  <img width="100%" src="https://forest-assets.s3.amazonaws.com/Github+README+assets/howitworks.png" alt="Howitworks">
-</p>
+So you have a working service built in Node.js. It uses (for example) [Hapi.js](https://hapijs.com/) for rendering a couple of REST routes and [mongoose](https://mongoosejs.com/) as the _connector_ to the database.
 
-Forest Admin consists of two components:
+Everything works fine, but now you would like to:
+* view all the data in the app,
+* perform custom _business_ actions on objects in the database,
+* bootstrap the tables with the _initial_ data,
+* build custom report pages,
+* allow other team members (not necessary programmers) to see what is going on in the application.
 
-- The Admin Frontend is the user interface where you'll manage your data and configuration.
-- The Admin Backend API hosted on your servers where you can find and extend your data models and all the business logic (routes, actions, …) related to your admin panel.
+And all these cases can be solved by AdminJS. By adding couple of lines of code you have a running admin interface.
 
-The Forest Admin NPM package (aka Forest Liana) introspects all your data model
-and dynamically generates the Admin API hosted on your servers. The Forest Admin
-interface is a web application that handles communication between the admin
-user and your application data through the Admin API.
+# Features
 
-## Features
+* CRUD any data in any resource
+* Custom actions
+* Form validation based on schema in your resources
+* Full featured dashboard with widgets
+* Custom resource decorators
 
-### CRUD
+## Contribute
 
-All of your CRUD operations are natively supported. The API automatically
-supports your data models' validation and allows you to easily extend or
-override any API routes' with your very own custom logic.
+If you would like work on an AdminJS and develop new features please check out our [Contribution Guide](https://github.com/SoftwareBrothers/adminjs/blob/master/CONTRIBUTING.md)
 
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/crud.jpeg" alt="CRUD">
+There you can find instructions on how to run AdminJS locally for development.
 
-### Search & Filters
+If you're searching for tasks you can contribute to, we currently accept contributions to issues in our [Kanban Board](https://github.com/orgs/SoftwareBrothers/projects/5/views/1).
 
-Forest Admin has a built-in search allowing you to run basic queries to
-retrieve your application's data. Set advanced filters based on fields and
-relationships to handle complex search use cases.
+Any small or large contribution or any input into discussion is welcome!
 
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/search+filters.jpeg" alt="Search and Filters">
+## License
 
-### Sorting & Pagination
+AdminJS is copyrighted © 2023 rst.software. It is a free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE.md) file.
 
-Sorting and pagination features are natively handled by the Admin API. We're
-continuously optimizing how queries are run in order to display results faster
-and reduce the load of your servers.
+## About rst.software
 
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/sorting+pagination.jpeg" alt="Sorting and Pagination">
+<img src="https://pbs.twimg.com/profile_images/1367119173604810752/dKVlj1YY_400x400.jpg" width=150>
 
-### Custom action
+We’re an open, friendly team that helps clients from all over the world to transform their businesses and create astonishing products.
 
-A custom action is a button which allows you to trigger an API call to execute
-a custom logic. With virtually no limitations, you can extend the way you
-manipulate data and trigger actions (e.g. refund a customer, apply a coupon,
-ban a user, etc.)
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/custom+actions.jpeg" alt="Custom action">
-
-### Export
-
-Sometimes you need to export your data to a good old fashioned CSV. Yes, we
-know this can come in handy sometimes :-)
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/exports.jpeg" alt="Export">
-
-### Segments
-
-Get in app access to a subset of your application data by doing a basic search
-or typing an SQL query or implementing an API route.
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/segments.jpeg" alt="Segments">
-
-### Dashboards
-
-Forest Admin is able to tap into your actual data to chart out your metrics
-using a simple UI panel, a SQL query or a custom API call.
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/dashboards.jpeg" alt="Dashboard">
-
-### WYSIWYG
-
-The WYSIWYG interface saves you a tremendous amount of frontend development
-time using drag'n'drop as well as advanced widgets to build customizable views.
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/wysiwyg.jpeg" alt="WYSIWYG">
-
-### Custom HTML/JS/CSS
-
-Code your own views using JS, HTML, and CSS to display your application data in
-a more appropriate way (e.g. Kanban, Map, Calendar, Gallery, etc.).
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/smart+views.jpeg" alt="Custom views">
-
-### Team-based permissions
-
-Without any lines of code, manage directly from the UI who has access or can
-act on which data using a team-based permission system.
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/teams.jpeg" alt="Team based permissions">
-
-### Third-party integrations
-
-Leverage data from third-party services by reconciling it with your
-application’s data and providing it directly to your Admin Panel. All your
-actions can be performed at the same place, bringing additional intelligence to
-your Admin Panel and ensuring consistency.
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/integrations.jpeg" alt="Third-party integrations">
-
-### Notes & Comments
-
-Assign your teammates to specific tasks, leave a note or simply comment a
-record, thereby simplifying collaboration all across your organization.
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/notes+comments.jpeg" alt="Notes and Comments">
-
-### Activity logs
-
-Monitor each action executed and follow the trail of modification on any data
-with an extensive activity log system.
-
-<img src="https://forest-assets.s3.amazonaws.com/Github+README+assets/activity+logs.jpeg" alt="Activity logs">
-
-## Community
-
-👇 Join our Developers community for support and more
-
-[![Discourse developers community](https://img.shields.io/discourse/posts?label=discourse&server=https%3A%2F%2Fcommunity.forestadmin.com)](https://community.forestadmin.com)
+* We are available for [hire](https://www.rst.software/estimate-your-project).
+* If you want to work for us - check out the [career page](https://www.rst.software/join-us).
