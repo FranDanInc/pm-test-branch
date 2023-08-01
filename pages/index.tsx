@@ -54,7 +54,7 @@ function Overview() {
               <Box>
                 <Button
                   component={Link}
-                  href="/dashboards/crypto"
+                  href="/dashboards/students"
                   variant="contained"
                   sx={{ ml: 2 }}
                 >
@@ -70,7 +70,7 @@ function Overview() {
         <Typography textAlign="center" variant="subtitle1">
           Crafted by{' '}
           <Link
-            href="https://bloomui.com"
+            href="https://bfactor.org"
             target="_blank"
             rel="noopener noreferrer"
           >

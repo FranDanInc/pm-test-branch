@@ -2,21 +2,21 @@ import Head from 'next/head';
 
 import SidebarLayout from '@/layouts/SidebarLayout';
 
-import PageHeader from '@/content/Dashboards/Crypto/PageHeader';
+import PageHeader from '@/content/Dashboards/Students/PageHeader';
 import PageTitleWrapper from '@/components/PageTitleWrapper';
 import { Container, Grid } from '@mui/material';
 import Footer from '@/components/Footer';
 
-import AccountBalance from '@/content/Dashboards/Crypto/AccountBalance';
-import Wallets from '@/content/Dashboards/Crypto/Wallets';
-import AccountSecurity from '@/content/Dashboards/Crypto/AccountSecurity';
-import WatchList from '@/content/Dashboards/Crypto/WatchList';
+import AccountBalance from '@/content/Dashboards/Students/AccountBalance';
+import Wallets from '@/content/Dashboards/Students/Wallets';
+import AccountSecurity from '@/content/Dashboards/Students/AccountSecurity';
+import WatchList from '@/content/Dashboards/Students/WatchList';
 
-function DashboardCrypto() {
+function DashboardStudents() {
   return (
     <>
       <Head>
-        <title>Crypto Dashboard</title>
+        <title>Students Dashboard</title>
       </Head>
       <PageTitleWrapper>
         <PageHeader />
@@ -48,6 +48,6 @@ function DashboardCrypto() {
   );
 }
 
-DashboardCrypto.getLayout = (page) => <SidebarLayout>{page}</SidebarLayout>;
+DashboardStudents.getLayout = (page) => <SidebarLayout>{page}</SidebarLayout>;
 
-export default DashboardCrypto;
+export default DashboardStudents;
