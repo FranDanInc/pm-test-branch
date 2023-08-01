@@ -1,0 +1,8 @@
+runtime: nodejs14
+service: progress monitor
+instance_class: F2
+
+env_variables:
+  GSHEETS_CLIENT_EMAIL: your-service-account-email@your-project-id.iam.gserviceaccount.com
+  GSHEETS_PRIVATE_KEY: "-----BEGIN PRIVATE KEY-----\nYourPrivateKeyHere\n-----END PRIVATE KEY-----"
+  GSHEETS_SPREADSHEET_ID: your-spreadsheet-id
