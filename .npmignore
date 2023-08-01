@@ -1,0 +1,6 @@
+src
+.github
+.yarn-error.log
+
+# Docker data
+data
