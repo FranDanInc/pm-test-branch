@@ -1,71 +1,39 @@
-# AdminJS
+# Nodejs-EJS-Role-JWToken-Auth-SequilizeMigration-Express-Framework materail bootstrap Role Based authentication CSRF protection
 
-[AdminJS](https://adminjs.co/) is an automatic admin interface that can be plugged into your application. You, as a developer, provide database models (like posts, comments, stores, products or whatever else your application uses), and AdminJS generates UI which allows you (or other trusted users) to manage content.
+This is a Node.js v17.6.0 with framewokr Express.js admin panel starter project with Token based authentication and session management, Server Side Error handling, form field validations. Used Sequilize 
 
-Inspired by: [django admin](https://docs.djangoproject.com), [rails admin](https://github.com/sferik/rails_admin) and [active admin](https://activeadmin.info/).
+Used Sequelize is a promise-based Node.js ORM tool for MySQL Server, You can use migrations to keep track of changes to the database. With migrations you can transfer your existing database into another state and vice versa.
 
-## Example application
+Genrate models, seeds, migration files with npx sequelize-cli model:generate --name UserHasRole --attributes userId:integer for more information visit sequilize official documentatiom for Sequelize migration section.
 
-Check out our demo application:
+# Installation
+It is a full Node.js and Express.js and Sequilize Migrations project that you should use as a starter project and implement your own functions.
 
-- Login: `admin@example.com`
-- Password: `password`
+* Clone the repository with git clone
+* modify the config/config.json file for mysql server configuration(username and password)
+* Run npm install
+* Run npx sequelize-cli db:migrate:all
+* Run npx sequelize-cli db:seed:all
+* Run npm start
+* That's it: launch the main URL and login with default credentials for admin admin@admin.com - 123456, for user user@user.com - 123456
 
-https://demo.adminjs.co
+# Home Page
+![picture alt](https://github.com/Mahanteshkumbar/Nodejs-EJS-Role-JWToken-Auth-SequilizeMigration-Express-Framework/blob/main/snapshots/homepage.png)
 
-You can also have a look at our customized AdminJS dashboard which shows various library statistics:
+# Login Page with validation
+![picture alt](https://github.com/Mahanteshkumbar/Nodejs-EJS-Role-JWToken-Auth-SequilizeMigration-Express-Framework/blob/main/snapshots/servervalidation.png)
 
-https://stats.adminjs.co
+# Signup Page with validation
+![picture alt](https://github.com/Mahanteshkumbar/Nodejs-EJS-Role-JWToken-Auth-SequilizeMigration-Express-Framework/blob/main/snapshots/register.png)
 
-## Getting started
+# Admin Dashboard
+![picture alt](https://github.com/Mahanteshkumbar/Nodejs-EJS-Role-JWToken-Auth-SequilizeMigration-Express-Framework/blob/main/snapshots/dashboard.png)
 
-- Check out the [documentation](https://docs.adminjs.co)
-- Try the [live demo](https://demo.adminjs.co) as mentioned above
+# Admin Dashboard Roles
+![picture alt](https://github.com/Mahanteshkumbar/Nodejs-EJS-Role-JWToken-Auth-SequilizeMigration-Express-Framework/blob/main/snapshots/dashboard1.png)
 
-## Our open source community on Slack
+# Admin Dashboard Users
+![picture alt](https://github.com/Mahanteshkumbar/Nodejs-EJS-Role-JWToken-Auth-SequilizeMigration-Express-Framework/blob/main/snapshots/dashboard2.png)
 
-- [Join the community](https://adminjs.page.link/slack) to get help and be inspired.
-
-# What kind of problems it solves
-
-So you have a working service built in Node.js. It uses (for example) [Hapi.js](https://hapijs.com/) for rendering a couple of REST routes and [mongoose](https://mongoosejs.com/) as the _connector_ to the database.
-
-Everything works fine, but now you would like to:
-* view all the data in the app,
-* perform custom _business_ actions on objects in the database,
-* bootstrap the tables with the _initial_ data,
-* build custom report pages,
-* allow other team members (not necessary programmers) to see what is going on in the application.
-
-And all these cases can be solved by AdminJS. By adding couple of lines of code you have a running admin interface.
-
-# Features
-
-* CRUD any data in any resource
-* Custom actions
-* Form validation based on schema in your resources
-* Full featured dashboard with widgets
-* Custom resource decorators
-
-## Contribute
-
-If you would like work on an AdminJS and develop new features please check out our [Contribution Guide](https://github.com/SoftwareBrothers/adminjs/blob/master/CONTRIBUTING.md)
-
-There you can find instructions on how to run AdminJS locally for development.
-
-If you're searching for tasks you can contribute to, we currently accept contributions to issues in our [Kanban Board](https://github.com/orgs/SoftwareBrothers/projects/5/views/1).
-
-Any small or large contribution or any input into discussion is welcome!
-
-## License
-
-AdminJS is copyrighted © 2023 rst.software. It is a free software, and may be redistributed under the terms specified in the [LICENSE](LICENSE.md) file.
-
-## About rst.software
-
-<img src="https://pbs.twimg.com/profile_images/1367119173604810752/dKVlj1YY_400x400.jpg" width=150>
-
-We’re an open, friendly team that helps clients from all over the world to transform their businesses and create astonishing products.
-
-* We are available for [hire](https://www.rst.software/estimate-your-project).
-* If you want to work for us - check out the [career page](https://www.rst.software/join-us).
+# User Dashboard
+![picture alt](https://github.com/Mahanteshkumbar/Nodejs-EJS-Role-JWToken-Auth-SequilizeMigration-Express-Framework/blob/main/snapshots/userdashboard.png)
