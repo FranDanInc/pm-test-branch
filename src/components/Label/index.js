@@ -1,6 +1,15 @@
+/*
+This code defines a React component named Label that represents a styled label with different color variants. The component uses the Material-UI library (@mui/material/styles) for styling and PropTypes for prop type validation.
+
+Overall, this code creates a reusable Label component that can be used to display labels with different color variants, making it easy to style and categorize content based on their purposes or statuses. The color variants are specified in the LabelWrapper styled component, and the parent component using Label can choose the color by passing the appropriate color prop value.
+*/
+
+//Import statements: The component imports PropTypes from the 'prop-types' library and the styled utility from Material-UI.
 import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 
+
+/*LabelWrapper styling: A styled component named LabelWrapper is created using the styled utility from Material-UI. This component defines various styles for the label based on different color variants. The styles include background color, padding, font size, border-radius, display (flex), and alignment. The colors for different variants are specified using the theme object provided by Material-UI.*/
 const LabelWrapper = styled('span')(
   ({ theme }) => `
       background-color: ${theme.colors.alpha.black[5]};

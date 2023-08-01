@@ -1,3 +1,5 @@
+/*This code defines a React component named Logo that represents a stylized logo with a text and version badge. The component uses the Material-UI library (@mui/material) and react-router-dom.*/
+
 import { Box, styled, Tooltip } from '@mui/material';
 import { Link } from 'react-router-dom';
 

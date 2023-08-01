@@ -1,3 +1,5 @@
+/*This code defines a React functional component named PageTitle, which represents a page title with a subheading and a documentation button. The component uses Material-UI components such as Typography, Button, and Grid to layout and style its content.*/
+
 import PropTypes from 'prop-types';
 import AddTwoToneIcon from '@mui/icons-material/AddTwoTone';
 import { Typography, Button, Grid } from '@mui/material';
