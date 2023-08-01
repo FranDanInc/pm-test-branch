@@ -74,7 +74,7 @@ function Overview() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            BloomUI.com
+            Bfactor.com
           </Link>
         </Typography>
       </Container>
