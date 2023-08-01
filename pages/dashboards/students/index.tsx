@@ -16,7 +16,7 @@ function DashboardStudents() {
   return (
     <>
       <Head>
-        <title>Students Dashboard</title>
+        <title>Student Dashboard</title>
       </Head>
       <PageTitleWrapper>
         <PageHeader />
